@@ -1,4 +1,4 @@
-class Schedular():
+class Scheduler():
      """
      Quản lý hàng đợi URL (tối giản).
      """

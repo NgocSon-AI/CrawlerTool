@@ -5,7 +5,7 @@ class DataExtractor():
 
      def extract(self, soup):
           data = []
-          for link in soup.fill_all("a", href=True):
+          for link in soup.find_all("a", href=True):
                title = link.text.strip()
                href = link["href"]
                if title:
