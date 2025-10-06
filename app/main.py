@@ -3,10 +3,10 @@ from core.parser import HTMLParser
 from core.extractor import DataExtractor
 from core.storage import DataStorage
 from core.scheduler import Scheduler
-from utils.logger import logging
+from utils.logger import get_logger
 
 def main():
-     logger = logging()
+     logger = get_logger()
      scheduler = Scheduler(["https://https://niflheim.world"])
      downloader = Downloader()
      parser = HTMLParser()
